@@ -1,0 +1,41 @@
+# project files
+/.classpath
+/.project
+/.idea
+/.vscode
+/env/
+*/env/
+*/env_gpu/
+*/env_tfgpu/
+*/env_*/
+
+# exclude deprecated files. store in a folder with name starting with depr_ 
+**/depr_**
+
+# exclude ipython checkpoints
+.ipynb_checkpoints
+
+# exclude data files unless specifically added
+*.csv
+*.txt
+*.xml
+*.pkl
+*.png
+*.json
+*.zip
+*.gz
+*.pdf
+
+# tensorflow model data that's not explicitly added
+**variables.data**
+**variables.index**
+*.pb
+
+# data files (should be explicitly added if you want to save on git)
+/data
+/models
+/results
+/output
+/imagenet
+/__pycache__
+/test_output
